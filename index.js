@@ -47,7 +47,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const init = async () => {
     console.log('Starting input questions');
     try {
-      const answers = await promptUser();
+      const answers = await questions();
   
       const markdownAnswers = generateMarkdown(answers);
   
