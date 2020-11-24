@@ -4,9 +4,9 @@ const fs = require('fs');
 const util = require('util');
 const otherUtils = require('./utils/generateMarkdown')
 const licenseOptions = ["MIT License", "GNU GPLv3", "Mozilla Public License 2.0", "Apache License 2.0"]
+// NEED TO COMPLETE THE LICENSE, GITHUB USERNAME, EMAIL ADDRESS FOR QUESTIONS SECTION SO THEY CAN CONTACT, 
 
 // array of questions for user
-// NEED TO HAVE THESE POPULATE INTO A TOC
 const questions = () => {
     return inquirer.prompt([
       {
@@ -22,7 +22,7 @@ const questions = () => {
       {
         type: 'input',
         name: 'installation',
-        message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
+        message: 'What are the steps required to install your project?',
       },
       {
         type: 'input',
@@ -39,6 +39,22 @@ const questions = () => {
         name: 'test',
         message: 'What are the test instructions?',
       },
+      {
+        type: 'checkbox',
+        name: 'license',
+        message: 'Press <space> to select the license you want, then enter to submit.',
+        choices: licenseOptions,
+      },
+      {
+        type: 'input',
+        name: 'github',
+        message: 'What is your github username?',
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?',
+      },
     ]);
   };
 
@@ -53,7 +69,7 @@ const init = async () => {
   
       const markdownAnswers = otherUtils(answers);
   
-    //   await writeFileAsync('README.md', markdownAnswers);
+      await writeFileAsync('README.md', markdownAnswers);
   
       console.log('Successfully wrote to README.md');
     } catch (err) {

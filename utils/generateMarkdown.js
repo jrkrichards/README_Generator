@@ -1,38 +1,46 @@
+// Variables
+const licenseBadges = []
+
 // function to generate markdown for README
 const generateMarkdown = (answers) =>
 
 `# ${answers.title}
 
-// ## Description 
+## Description 
 
-// ${answers.description}
+${answers.description}
 
-// ## Table of Contents
+## Table of Contents
 
-// * [Installation](#${answers.installation})
-// * [Usage](#${answers.usage})
-// * [License](#License)
-// * [Contributing](#${answers.contribution})
-// * [Tests](#${answers.test})
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
 
-// ## Installation
+## Installation
 
-// ${answers.installation}
+${answers.installation}
 
-// ## Usage 
+## Usage 
 
-// ${answers.usage}
+${answers.usage}
 
-// ## License
+## License
 
-// The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use [https://choosealicense.com/](https://choosealicense.com/)
+The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use [https://choosealicense.com/](https://choosealicense.com/)
 
-// ## Contributing
+## Contributing
 
-// ${answers.contribution}
+${answers.contribution}
 
-// ## Tests
+## Tests
 
-// ${answers.test}`;
+${answers.test}
+
+## Questions
+
+Github: https://github.com/${answers.github}  
+If you have any questions email them to ${answers.email}`;
 
 module.exports = generateMarkdown;
