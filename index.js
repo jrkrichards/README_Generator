@@ -1,8 +1,9 @@
-// requirements
+// Variables 
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 const otherUtils = require('./utils/generateMarkdown')
+const licenseOptions = ["MIT License", "GNU GPLv3", "Mozilla Public License 2.0", "Apache License 2.0"]
 
 // array of questions for user
 // NEED TO HAVE THESE POPULATE INTO A TOC
@@ -51,7 +52,6 @@ const init = async () => {
       const answers = await questions();
   
       const markdownAnswers = otherUtils(answers);
-      console.log(markdownAnswers)
   
     //   await writeFileAsync('README.md', markdownAnswers);
   
