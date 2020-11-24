@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
+const otherUtils = require('./utils/generateMarkdown')
 
 // array of questions for user
 // NEED TO HAVE THESE POPULATE INTO A TOC
@@ -49,9 +50,9 @@ const init = async () => {
     try {
       const answers = await questions();
   
-      const markdownAnswers = generateMarkdown(answers);
+      const markdownAnswers = otherUtils(answers);
   
-      await writeFileAsync('README.md', markdown);
+    //   await writeFileAsync('README.md', markdownAnswers);
   
       console.log('Successfully wrote to README.md');
     } catch (err) {
