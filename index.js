@@ -3,8 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 const otherUtils = require('./utils/generateMarkdown')
-const licenseOptions = ["MIT License", "GNU GPLv3", "Mozilla Public License 2.0", "Apache License 2.0"]
-// NEED TO COMPLETE THE LICENSE, GITHUB USERNAME, EMAIL ADDRESS FOR QUESTIONS SECTION SO THEY CAN CONTACT, 
+const licenseOptions = ["MIT", "GPL-3.0", "MPL-2.0", "Apache-2.0"] 
 
 // array of questions for user
 const questions = () => {

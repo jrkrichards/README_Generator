@@ -1,9 +1,5 @@
-// Variables
-const licenseBadges = []
-
 // function to generate markdown for README
 const generateMarkdown = (answers) =>
-
 `# ${answers.title}
 
 ## Description 
@@ -17,6 +13,7 @@ ${answers.description}
 * [License](#License)
 * [Contributing](#Contributing)
 * [Tests](#Tests)
+* [Questions](#Questions)
 
 ## Installation
 
@@ -28,7 +25,7 @@ ${answers.usage}
 
 ## License
 
-The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use [https://choosealicense.com/](https://choosealicense.com/)
+[![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-yellow.svg)](https://choosealicense.com/licenses/${answers.license}/)
 
 ## Contributing
 
@@ -42,5 +39,6 @@ ${answers.test}
 
 Github: https://github.com/${answers.github}  
 If you have any questions email them to ${answers.email}`;
+
 
 module.exports = generateMarkdown;

@@ -1,8 +1,8 @@
-# README Generator
+# README
 
 ## Description
 
-test1
+test
 
 ## Table of Contents
 
@@ -14,25 +14,25 @@ test1
 
 ## Installation
 
-test2
+test
 
 ## Usage
 
-test3
+test
 
 ## License
 
-The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use [https://choosealicense.com/](https://choosealicense.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/MIT/)
 
 ## Contributing
 
-test4
+test
 
 ## Tests
 
-test5
+test
 
 ## Questions
 
-"Github: https://github.com/jrkrichards  
-If you have any questions email them to jr"
+Github: https://github.com/jrkr  
+If you have any questions email them to jrkr@gmail.com
