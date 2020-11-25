@@ -1,5 +1,6 @@
 // function to generate markdown for README
 const generateMarkdown = (answers) =>
+
 `# ${answers.title}
 
 ## Description 
@@ -25,7 +26,7 @@ ${answers.usage}
 
 ## License
 
-[![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-yellow.svg)](https://choosealicense.com/licenses/${answers.license}/)
+[![License](https://img.shields.io/static/v1?label=License&message=${answers.license}&color=yellow)](https://choosealicense.com/licenses/${answers.license.toString().toLowerCase()}/)
 
 ## Contributing
 

@@ -1,28 +1,29 @@
-# README
+# README Generator
 
-## Description
+## Description 
 
 test
 
 ## Table of Contents
 
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [License](#License)
-- [Contributing](#Contributing)
-- [Tests](#Tests)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
+* [Questions](#Questions)
 
 ## Installation
 
 test
 
-## Usage
+## Usage 
 
 test
 
 ## License
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/MIT/)
+[![License](https://img.shields.io/static/v1?label=License&message=Apache-2.0&color=yellow)](https://choosealicense.com/licenses/apache-2.0/)
 
 ## Contributing
 
@@ -34,5 +35,5 @@ test
 
 ## Questions
 
-Github: https://github.com/jrkr  
-If you have any questions email them to jrkr@gmail.com
+Github: https://github.com/jrkrichards  
+If you have any questions email them to jrkrichards@gmail.com
